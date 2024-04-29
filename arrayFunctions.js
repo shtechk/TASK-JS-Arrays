@@ -6,12 +6,18 @@
  *
  * e.g.
  * isArrayLengthOdd([1, 2, 3]) -> true
- * isArrayLengthOdd([1, 2, 3, 4]) -> flase
+ * isArrayLengthOdd([1, 2, 3, 4]) -> false
  */
 function isArrayLengthOdd(numbers) {
   // Your code here
+  if (numbers.length % 2 !== 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
+console.log(isArrayLengthOdd([1, 2, 3, 4]));
 /**
  * isArrayLengthEven(numbers):
  * - receives array `numbers`
@@ -24,7 +30,14 @@ function isArrayLengthOdd(numbers) {
  */
 function isArrayLengthEven(numbers) {
   // Your code here
+  if (numbers.length % 2 == 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
+
+console.log(isArrayLengthEven([1, 2, 3, 4]));
 
 /**
  * addLailaToArray(instructors):
@@ -36,7 +49,11 @@ function isArrayLengthEven(numbers) {
  */
 function addLailaToArray(instructors) {
   // Your code here
+  instructors.push("Laila");
+  console.log(instructors);
 }
+
+addLailaToArray(["Shahad", "Abdulla", "Mohammad"]);
 
 /**
  * eliminateTeam(teams):
